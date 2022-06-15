@@ -1,0 +1,24 @@
+# To install brew on macOS
+# ------------------------
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+
+# To install tmux on..
+# ----------------------
+# - Debian or Ubuntu -
+# apt install tmux
+
+# - macOS -
+# brew install tmux
+
+
+
+# To install neovim on..
+# ----------------------
+# - Debian or Ubuntu -
+# sudo apt install neovim
+
+# - macOS -
+# brew install neovim
+

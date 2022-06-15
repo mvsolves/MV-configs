@@ -20,7 +20,7 @@ mv -f ~/configs/.* ~
 
 # Follow the instructions in packageInstallInfo
 ```
-vi packageInstallInfo
+vi .packageInstallInfo
 ```
 
 # Reload shell (if using zsh, reload .zshrc, if using bash, reload .bashrc etc.)

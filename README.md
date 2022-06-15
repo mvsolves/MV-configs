@@ -1,5 +1,5 @@
 # configs
-A record of my configs
+A record of my configurations for shell, the plugins for neovim, and tmux
 
 # Steps to install configurations (FOLLOW IN ORDER)
 

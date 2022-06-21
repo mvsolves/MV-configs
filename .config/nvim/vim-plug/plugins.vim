@@ -1,5 +1,4 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-    Plug 'Yggdroot/indentLine'
     Plug 'sheerun/vim-polyglot'
     Plug 'scrooloose/NERDTree'
     Plug 'jiangmiao/auto-pairs'

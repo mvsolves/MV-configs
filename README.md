@@ -16,7 +16,7 @@ vi .packageInstallInfo
 ## Reload shell (if using zsh, reload .zshrc, if using bash, reload .bashrc etc.)
 
 ```
-source ~/.bashrc
+source ~/.<your-current-working-shell>rc
  ```
 
 DONE!

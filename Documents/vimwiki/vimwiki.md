@@ -1,4 +1,4 @@
-#Vimwiki
+# Plugins -> Vimwiki
 
 ## Commands
 		:help vimwiki				(Manual page)

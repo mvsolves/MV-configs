@@ -1,4 +1,4 @@
-# Coding practice
+# Languages 
 		[CSS](CSS)				
 		Html	
 		Javascript

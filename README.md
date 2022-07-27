@@ -17,12 +17,8 @@ git clone https://github.com/mvsolves/configs
 ```
 mv -f ~/configs/.* ~
 ```
-## 3. Follow the instructions in packageInstallInfo
 
-```
-vi .packageInstallInfo
-```
-## 4. Reload shell (if using zsh, reload .zshrc, if using bash, reload .bashrc etc.)
+## 3. Reload shell (if using zsh, reload .zshrc, if using bash, reload .bashrc etc.)
 
 ```
 source ~/.<your-current-working-shell>rc

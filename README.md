@@ -1,5 +1,13 @@
 # INSTALL INSTRUCTIONS
 
+## PACKAGES NEEDED
+Install neovim
+https://github.com/neovim/neovim/wiki/Installing-Neovim
+
+Install tmux
+https://github.com/tmux/tmux/wiki/Installing
+
+
 ## Creates a folder named configs
 ```
 git clone https://github.com/mvsolves/configs

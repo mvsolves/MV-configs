@@ -1,6 +1,7 @@
 # INSTALL INSTRUCTIONS
 
-## PACKAGES NEEDED
+
+## PACKAGES NEEDED BEFORE CONTINUING
 Install neovim
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 
@@ -8,20 +9,21 @@ Install tmux
 https://github.com/tmux/tmux/wiki/Installing
 
 
-## Creates a folder named configs
+
+## 1. Creates a folder named configs
 ```
 git clone https://github.com/mvsolves/configs
 ```
-## Moves all hidden files in configs into home directory (enter yes and and ignore error upon running the command
+## 2. Moves all hidden files in configs into home directory (enter yes and and ignore error upon running the command
 ```
 mv -f ~/configs/.* ~
 ```
-## Follow the instructions in packageInstallInfo
+## 3. Follow the instructions in packageInstallInfo
 
 ```
 vi .packageInstallInfo
 ```
-## Reload shell (if using zsh, reload .zshrc, if using bash, reload .bashrc etc.)
+## 4. Reload shell (if using zsh, reload .zshrc, if using bash, reload .bashrc etc.)
 
 ```
 source ~/.<your-current-working-shell>rc

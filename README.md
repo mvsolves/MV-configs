@@ -1,12 +1,10 @@
 # INSTALL INSTRUCTIONS
 
 
-## PACKAGES NEEDED BEFORE CONTINUING
-Install neovim
-https://github.com/neovim/neovim/wiki/Installing-Neovim
 
-Install tmux
-https://github.com/tmux/tmux/wiki/Installing
+## PACKAGES NEEDED BEFORE CONTINUING
+Neovim: https://github.com/neovim/neovim/wiki/Installing-Neovim
+Tmux: https://github.com/tmux/tmux/wiki/Installing
 
 
 
@@ -29,7 +27,4 @@ vi .packageInstallInfo
 source ~/.<your-current-working-shell>rc
  ```
 
-DONE!
-
-## Notes
- Please ignore the .tmux.conf as it is a symbolic link (unless you are using mac and installed tmux via brew). Rename the ".tmux.conf.BK" to ".tmux.conf" as this shall work for linux systems
+# DONE!

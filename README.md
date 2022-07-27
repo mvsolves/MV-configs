@@ -4,6 +4,7 @@
 
 ## PACKAGES NEEDED BEFORE CONTINUING
 Neovim: https://github.com/neovim/neovim/wiki/Installing-Neovim
+
 Tmux: https://github.com/tmux/tmux/wiki/Installing
 
 

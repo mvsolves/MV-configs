@@ -4,8 +4,8 @@
 		- [X] [order of precedence](order of precedence)
 		- [X] [types of selectors](types of selectors)
 		- [X] [combinators](combinators)
-		- [ ] [unit types](unit types)
-		- [ ] grid module
+		- [X] [unit types](unit types)
+		- [X] grid module
 		- [ ] flexbox module
 
 ## Layer 2 

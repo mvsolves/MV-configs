@@ -1,14 +1,14 @@
 # Vimwiki -> Vim
 
 ## Normal mode
-		r<any char>		(Replace current char with given char)
-		yy						(To yank a line)
-		<num>yy     	(To yank <num> lines)
-		o							(Add line below)
-		O							(Add line above)
-		A							(Go into insert mode at end of line)		
-		v + </>				(Shift selected line(s))
-	
+		r<any char>							(Replace current char with given char)
+		yy											(To yank a line)
+		<num>yy									(To yank <num> lines)
+		o												(Add line below)
+		O												(Add line above)
+		A												(Go into insert mode at end of line)		
+		v + </>									(Shift selected line(s))
+		<num>i<text><RET><ESC>	(Create <text> on <num> lines)
 	
 		### Word
 		vep						(Replace word with what was previously yanked)
@@ -31,6 +31,6 @@
 		:set noh			(Remove highlighting)
 		:%y+					(Yank to system clipboard)
 		:marks				(View all created marks)
-	
+		:<,>s/ \v.*   (Delete everything up to line)  
 ## Visual block mode (ctrl-v)
 		<select-text><shift-i>	(insert text for all lines selected)

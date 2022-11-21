@@ -1,7 +1,7 @@
 # Languages 
 		[CSS](CSS)				
 		Html	
-		Javascript
+		[Javascript](Javascript)
 		Lua
 		Vimscript
 		C++

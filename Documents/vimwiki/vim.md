@@ -9,6 +9,8 @@
 		A												(Go into insert mode at end of line)		
 		v + </>									(Shift selected line(s))
 		<num>i<text><RET><ESC>	(Create <text> on <num> lines)
+		<ctr><k>								(Toggle MVexplorer vim plugin)
+		<g><ctr-g>							(Get word count)
 	
 		### Word
 		vep						(Replace word with what was previously yanked)
@@ -17,6 +19,8 @@
 		e							(Go forward a word)
 		"+y						(yank to system clipboard)
 		
+		### Search
+		<num>s#)#\0\r#g		(Add a new line at every ')') 
 		### [Fold](Fold)		
 		### [Marks](Marks)
 		### [Selection](Selection)	
@@ -32,5 +36,7 @@
 		:%y+					(Yank to system clipboard)
 		:marks				(View all created marks)
 		:<,>s/ \v.*   (Delete everything up to line)  
+		
 ## Visual block mode (ctrl-v)
+		<select-text>g<ctrl-a>	(increment selected lines)
 		<select-text><shift-i>	(insert text for all lines selected)

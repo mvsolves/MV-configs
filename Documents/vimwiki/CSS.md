@@ -6,17 +6,17 @@
 		- [X] [combinators](combinators)
 		- [X] [unit types](unit types)
 		- [X] grid module
-		- [ ] flexbox module
+		- [X] flexbox module
 
 ## Layer 2 
-		- [ ] display and position properties
-		- [ ] pseudo-class
+		- [X] display and position properties
+		- [X] pseudo-class
 		- [ ] transforms
 		- [ ] transitions
 		- [ ] animations
 
 ## Layer 3 
-		- [ ] frameworks
-		- [ ] responsive web design
-		- [ ] frameworks (bootstrap, materialize etc.)
-		- [ ] architecture (BEM, OOCSS, SMACSS)
+		- [X] frameworks
+		- [X] responsive web design
+		- [X] frameworks (bootstrap, materialize etc.)
+		- [X] architecture (BEM, OOCSS, SMACSS)

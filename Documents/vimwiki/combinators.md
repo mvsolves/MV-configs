@@ -13,20 +13,22 @@
     
 ## Child combinator (2nd selector inside 1st selector *AFFECTS ONLY CHILD 2nd selector!*)
     ```html
-     <ul>
+    <ul>
         <li>Unordered item</li>
         <li>Unordered item
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-            </ol>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
         </li>
     </ul>   
-    
+    ```
+
+    ```css
     ul > li {
     border-top: 5px solid red;
     }
-```
+    ```
 
 ## Adjacent sibling combinator (1st selector chooses only the first element given by the 2nd selector)
     ```html    

@@ -2,6 +2,7 @@
 
 ## My Knowledge base
 		[vim](vim)
+		[MVrules](MVrules)
 		[tmux](tmux)
 		[terminal](terminal)
 		[plugins](plugins)
@@ -11,5 +12,6 @@
 		
 ## Daily
 		[diary](diary/diary.md)
+		[school](school)
 		[TODO](TODO)
 		[projects](projects)

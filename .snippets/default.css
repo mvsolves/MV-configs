@@ -1,10 +1,26 @@
 * {
-	background: lightsteelblue;	
+	background: #24252A;	
 	font-size: 30px;
 	text-align: center;
-	color: white;
+	color: whitesmoke;
+
+	/* CSS reset */
+	/* margin: 0; */
+	padding: 0;
+	border: 0;
+	outline: 0;
 }
 
-html, body {
-    height: 100%; /* IMPORTANT!!! Stretches viewport to 100% */
+body {
+	min-height: 100vh; /* IMPORTANT! Stretches viewport to 100vh */
+	background-color: lightsteelblue;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+html {
+	background-color: #24252A;	
 }

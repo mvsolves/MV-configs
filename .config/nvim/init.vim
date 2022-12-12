@@ -37,10 +37,11 @@ source $HOME/.snippets/snippets.vim
 
 "Plug installer
 call plug#begin()
-" Plug 'mvsolves/MV-explorer'
 Plug 'mvsolves/MV-pairs'
 
 Plug 'vim-scripts/ScrollColors'
+
+" Run Unix commands in vim
 Plug 'christoomey/vim-run-interactive'
 
 Plug 'numToStr/Comment.nvim'
@@ -49,30 +50,44 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'rhysd/devdocs.vim'
 Plug 'tpope/vim-surround'
 
-Plug 'nyngwang/NeoRoot.lua'
 Plug 'nvim-tree/nvim-tree.lua'
-" Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+
+" Html/css tools
+Plug 'mattn/emmet-vim'
+
+" More support for ctags
+Plug 'ludovicchabant/vim-gutentags'
+
+" Completion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-nvim-lua'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
 
 
 Plug 'vimwiki/vimwiki'
 Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
+
 Plug 'sheerun/vim-polyglot'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Language server
+Plug 'neovim/nvim-lspconfig'
+
 call plug#end()
 
-" Coc mappings
-noremap cd :CocDis<CR>
-noremap ce :CocEn<CR>
 
 
-lua require('Comment').setup()
+
+
 lua require('mvsolves')
 
 " Vimwiki plugin setup
 let g:vimwiki_list = [{'path':'~/Documents/vimwiki','syntax':'markdown','ext':'.md'}]
 
-
-" let g:coc_start_at_startup = 1
-" let g:coc_user_config = 1
-" let g:coc_global_extensions = 1
+" Emmit-vim setup
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall

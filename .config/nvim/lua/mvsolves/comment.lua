@@ -1,1 +1,3 @@
-print('hello')
+require('Comment').setup()
+
+

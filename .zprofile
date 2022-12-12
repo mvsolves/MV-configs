@@ -17,3 +17,4 @@ export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 
 
 alias code='cd ~/Documents/MV/code;pwd'
+source ~/Documents/mixxxDev/mixxx/tools/macos_buildenv.sh setup --profile

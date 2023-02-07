@@ -4,7 +4,5 @@ vim.g.loaded_netrwPlugin = 1
 
 require('mvsolves.lspconfig')
 require('mvsolves.nvim-tree')
-require('mvsolves.completion')
 require('mvsolves.lualine')
 require('mvsolves.comment')
-

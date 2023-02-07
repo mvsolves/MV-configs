@@ -1,6 +1,6 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
-"Nvim setup
+" Nvim setup
 syntax on
 " colorscheme materialbox 
 colorscheme jellybeans 
@@ -30,54 +30,64 @@ autocmd VimLeave * call system("tmux rename-window zsh")
 " Turns ejs files to follow the html syntax
 au BufNewFile,BufRead *.ejs set filetype=html
 
-
 " Contains MV custom snippets
 source $HOME/.snippets/snippets.vim
 
 
-"Plug installer
+
+
+
+" ---- Plug installer -------------------------
 call plug#begin()
 Plug 'mvsolves/MV-pairs'
-
-Plug 'vim-scripts/ScrollColors'
 
 " Run Unix commands in vim
 Plug 'christoomey/vim-run-interactive'
 
+" Add comments
 Plug 'numToStr/Comment.nvim'
+
+" Statusbar
 Plug 'nvim-lualine/lualine.nvim'
 
-Plug 'rhysd/devdocs.vim'
+" Add braces etc around specified text
 Plug 'tpope/vim-surround'
 
+" File browser
 Plug 'nvim-tree/nvim-tree.lua'
 
-" Html/css tools
+" Html/css
 Plug 'mattn/emmet-vim'
+Plug 'ap/vim-css-color'
 
-" More support for ctags
-Plug 'ludovicchabant/vim-gutentags'
-
-" Completion
+" Language server
+Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
 
+" Auto update Vim buffer after changes made in another app
+Plug 'djoshea/vim-autoread'
 
+" Notes
 Plug 'vimwiki/vimwiki'
-Plug 'ap/vim-css-color'
-Plug 'rafi/awesome-vim-colorschemes'
 
+" Syntax highlighting (change for Treesitter?)
 Plug 'sheerun/vim-polyglot'
 
-" Language server
-Plug 'neovim/nvim-lspconfig'
+" Colorscheme packs
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'vim-scripts/ScrollColors'
 
 call plug#end()
+
+
+
+
+
+
 
 
 

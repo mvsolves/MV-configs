@@ -9,6 +9,9 @@
 		[languages](languages)
 		[networking](networking)
 		[circuit](circuit)
+		[backups](backups)
+		[python](python)
+		[git](git)
 		
 ## Daily
 		[diary](diary/diary.md)

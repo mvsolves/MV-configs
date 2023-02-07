@@ -6,3 +6,5 @@ require('mvsolves.lspconfig')
 require('mvsolves.nvim-tree')
 require('mvsolves.lualine')
 require('mvsolves.comment')
+
+print('test')

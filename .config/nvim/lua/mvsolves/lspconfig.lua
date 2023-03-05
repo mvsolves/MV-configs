@@ -1,7 +1,11 @@
-local capabilities = require('mvsolves.completion')
+require("mason").setup()
+require('mason-lspconfig').setup {
+  ensure_installed = {'tailwindcss', 'lua_ls'}
+}
+require("neodev").setup{}
 
-local on_attach = function(client, bufnr)
-
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local on_attach = function(_, bufnr)
   -- Jump to errors
   vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
   vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
@@ -33,6 +37,10 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format {async = true} end, bufopts)
 
+  -- vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, {})
+
+
+
 end
 
 local lsp_flags = {
@@ -43,26 +51,30 @@ local lsp_flags = {
 
 
 
-
-
-
-
-
-
-
 ---- Per language configurations --------
 
-require('lspconfig').sumneko_lua.setup {
+require('lspconfig').lua_ls.setup {
   on_attach = on_attach,
   flags = lsp_flags,
   capabilities = capabilities,
 
   settings = {
     Lua = {
-      diagnostics =
-      {
-        globals = {'vim', 'opts'}
-      }
+      runtime = {
+        -- Tell the language server which version of Lua
+        -- you're using (most likely LuaJIT in the case of Neovim)
+        version = 'LuaJIT',
+      },
+
+      diagnostics = { globals = {'vim', 'opts'}, },
+
+      workspace = {
+        -- Make the server aware of Neovim runtime files
+        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false, -- This removes the annoying 'luv' pop-up
+      },
+
+      telemetry = { enable = false, },
     }
   }
 }
@@ -78,3 +90,36 @@ require('lspconfig').clangd.setup {
   flags = lsp_flags,
   capabilities = capabilities,
 }
+
+require('lspconfig').tailwindcss.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+
+  -- Path to executable
+  -- cmd = {'/usr/local/bin/tailwindcss-language-server'},
+
+  -- Find root directory based off file types
+  root_dir = vim.fs.dirname(vim.fs.find({'tailwind.config.js', 'tailwind.config.ts', 'postcss.config.js', 'postcss.config.ts', 'package.json', 'node_modules', '.git'}, { upward = true })[3]),
+
+  name = 'tailwindcss',
+
+  tailwindCSS = {
+    filetypes = { "html", "djangohtml" },
+    classAttributes = { "class", "className", "classList", "ngClass" },
+    lint = {
+      cssConflict = "warning",
+      invalidApply = "error",
+      invalidConfigPath = "error",
+      invalidScreen = "error",
+      invalidTailwindDirective = "error",
+      invalidVariant = "error",
+      recommendedVariantOrder = "warning"
+    },
+    validate = true
+  },
+}
+  -- Help debug per LSP??
+  -- local workspace_path = vim.lsp.buf.list_workspace_folders()[1]
+  -- print(workspace_path)
+  -- local file_path = vim.fn.expand('%:' .. workspace_path .. ':.')

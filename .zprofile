@@ -16,6 +16,9 @@ export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 
 
+
+export PATH="/usr/local/bin/tailwindcss-language-server:$PATH"
+
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -24,3 +27,5 @@ eval "$(pyenv init -)"
 # The original version is saved in .zprofile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 export PATH
+
+source ~/.zshrc

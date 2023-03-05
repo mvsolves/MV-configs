@@ -34,63 +34,51 @@ au BufNewFile,BufRead *.ejs set filetype=html
 source $HOME/.snippets/snippets.vim
 
 
-
-
-
 " ---- Plug installer -------------------------
 call plug#begin()
-Plug 'mvsolves/MV-pairs'
 
-" Run Unix commands in vim
-Plug 'christoomey/vim-run-interactive'
+" Syntax highlighting
+Plug 'sheerun/vim-polyglot'
 
-" Add comments
-Plug 'numToStr/Comment.nvim'
-
-" Statusbar
-Plug 'nvim-lualine/lualine.nvim'
-
-" Add braces etc around specified text
-Plug 'tpope/vim-surround'
-
-" File browser
-Plug 'nvim-tree/nvim-tree.lua'
-
-" Html/css
-Plug 'mattn/emmet-vim'
-Plug 'ap/vim-css-color'
+" Syntax formatting
+Plug 'jose-elias-alvarez/null-ls.nvim'
 
 " Language server
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'kabouzeid/nvim-lspinstall'
+Plug 'williamboman/mason.nvim'
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-nvim-lua'
-Plug 'hrsh7th/cmp-nvim-lsp'
 
-" Auto update Vim buffer after changes made in another app
-Plug 'djoshea/vim-autoread'
+" Completion
+Plug 'rafamadriz/friendly-snippets'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'folke/neodev.nvim'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'hrsh7th/cmp-path'
+" Plug 'hrsh7th/cmp-buffer'
+" Plug 'saadparwaiz1/cmp_luasnip'
+
+" UI and display
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'ap/vim-css-color'
+
+" Utility plugins
+Plug 'numToStr/Comment.nvim'
 
 " Notes
 Plug 'vimwiki/vimwiki'
 
-" Syntax highlighting (change for Treesitter?)
-Plug 'sheerun/vim-polyglot'
+" Telescope
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/plenary.nvim'
 
-" Colorscheme packs
+" Colorschemes
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'vim-scripts/ScrollColors'
 
 call plug#end()
-
-
-
-
-
-
-
-
-
 
 
 lua require('mvsolves')
